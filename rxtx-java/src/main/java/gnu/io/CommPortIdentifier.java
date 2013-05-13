@@ -115,7 +115,7 @@ public class CommPortIdentifier extends Object {
         if ("true".equals(System.getProperty("gnu.io.rxtx.LibraryLoader"))) {
             LibraryLoader.loadLibrary("rxtxSerial");
         } else {
-            System.loadLibrary("rxtxSerial");
+            RXTXVersion.loadLibrary("rxtxSerial");
         }
     }
 
